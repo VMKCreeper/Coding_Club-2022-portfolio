@@ -27,7 +27,7 @@ class Main
         game.printBoard();
         if(game.checkWin())
         {
-        	game.winMessage();
+		game.winMessage();
         }
         else
         {
@@ -49,20 +49,20 @@ class Main
     	boolean yeet = true;
         while(yeet)
         {
-        	String choice = sc.nextLine();
+            String choice = sc.nextLine();
 
             String[] array = choice.split(" ");
             int i = Integer.parseInt(array[0]);
             int j = Integer.parseInt(array[1]);
-        	if(game.pickLocation(i, j))
-            {
-                game.takeTurn(i, j);
-                yeet = false;
-            }
-        	else
-        	{
-        		System.out.println("This location is taken, please enter new location.");
-        	}
+            if(game.pickLocation(i, j))
+	    {
+		game.takeTurn(i, j);
+		yeet = false;
+	    }
+	    else
+	    {
+	    	System.out.println("This location is taken, please enter new location.");
+	    }
         }
     }
     
@@ -81,16 +81,16 @@ class Main
             e.printStackTrace();
         }
     	
-		while(yeet)
+	while(yeet)
+	{
+		int col = move.nextInt(3);
+		int row = move.nextInt(3);
+		if(game.pickLocation(col, row))
 		{
-			int col = move.nextInt(3);
-			int row = move.nextInt(3);
-			if(game.pickLocation(col, row))
-	        {
-	            game.takeTurn(col, row);
-	            yeet = false;
-	        }
-		}		
+			game.takeTurn(col, row);
+			yeet = false;
+		}
+	}		
     	check(game);
     	game.checkWin();
     }
