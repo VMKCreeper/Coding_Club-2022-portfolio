@@ -1,0 +1,180 @@
+:root{
+    --b-grey: rgb(47, 50, 63);
+    --p-grey: rgb(116, 111, 141);
+    --purple: rgb(87, 72, 90);
+    --b-greyent: rgb(55, 61, 77);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color:rgb(255, 255, 255);
+}
+
+body{
+    background-color: var(--b-grey);
+}
+
+button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--p-grey);
+    padding: 0 2rem;
+}
+
+main{
+    display: flex;
+}
+
+.search{
+    max-width: 1000px;
+    display: flex;
+    margin: 1rem;
+}
+
+.search h1{
+    margin-right: 2rem;
+}
+
+.search button:hover{
+    cursor: pointer;
+}
+
+.input{
+    display: flex;
+    border-radius: 1rem;
+    background-color: var(--b-greyent);
+}
+
+.input input{
+    width: 500px;
+    margin: 0 1rem;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.input button{
+    margin-right: 0.5rem;
+}
+
+.nav-button{
+    display: flex;
+}
+
+.nav-button a{
+    text-decoration: underline;
+    margin: auto 1rem;
+}
+
+.nav-button a:hover{
+    cursor: pointer;
+    color: rgb(224, 91, 73);
+}
+
+/* home button */
+#home{
+    cursor: pointer;
+}
+
+/* items */
+.content-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    margin: 1rem;
+    background-color: var(--b-greyent);
+    padding: 1rem;
+}
+
+#location{
+    text-decoration: underline;
+}
+
+#brief{
+    font-weight: bold;
+}
+
+/* side panel */
+.filter{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    padding: 1rem;
+}
+
+.filter label{
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.filter-submit{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: var(--p-grey);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.filter-submit:hover{
+    cursor: pointer;
+}
+
+.filter select{
+    background-color: var(--b-grey);
+    outline: none;
+    border-color: var(--p-grey);
+}
+
+/* logged in specifics */
+.profile{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.profile h3{
+    margin: auto 0.5rem;
+}
+
+.profile .username{
+    font-size: 25px;
+    color: rgb(99, 27, 68);
+}
+
+.profile .logout:hover, .profile .username:hover{
+    cursor: pointer;
+}
+
+#pfp{
+    border-radius: 2rem;
+    width: 50px;
+    height: 50px;
+    margin: auto
+}
+
+/* signed out specifics */
+.account{
+    margin: auto;
+}
+
+.account a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(99, 27, 68);
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <title>Housify</title>
+</head>
+<body>
+    <header class="nav-bar">
+        <div class="search">
+            <h1 id="home">Housify</h1>
+            <div class="input">
+                <input type="text" id="search">
+                <button class="search_button">Search</button>
+            </div>
+        </div>
+        <div class="nav-button">
+            <a href="/buy">Buy</a>
+            <a href="/sell">Sell</a>
+            <a href="/rent">Rent</a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="filter">
+            <h3>Filters</h3>
+            <label for="property-type">Property Type</label>
+            <select id="property-type">
+                <option value="any">Any</option>
+                <option value="residential">Residential</option>
+                <option value="condo/strata">Condo/Strata</option>
+                <option value="vacant-land">Vacant Land</option>
+                <option value="multi-family">Multi Family</option>
+                <option value="agriculture">Agriculture</option>
+                <option value="parking">Parking</option>
+            </select>
+
+            <label for="transaction-type">Transaction Type</label>
+            <select id="transaction-type">
+                <option value="sale">For Sale</option>
+                <option value="rent">For Rent</option>
+            </select>
+
+            <label for="beds">Beds</label>
+            <select id="beds">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="5+">5+</option>
+            </select>
+
+            <label for="baths">Baths</label>
+            <select id="baths">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="5+">5+</option>
+            </select>
+
+            <label for="building-type">Building Type</label>
+            <select id="building-type">
+                <option value="house">House</option>
+                <option value="row-townhouse">Row / Townhouse</option>
+                <option value="apartment">Apartment</option>
+                <option value="duplex">Duplex</option>
+                <option value="triplex">Triplex</option>
+                <option value="fourplex">Fourplex</option>
+                <option value="garden-home">Garden Home</option>
+                <option value="mobile-home">Mobile Home</option>
+                <option value="manufactured-home/mobile">Manufactured Home/Mobile</option>
+                <option value="special-purpose">Special Purpose</option>
+                <option value="residential-commercial-mix">Residential Commercial Mix</option>
+                <option value="manufactured-home">Manufactured Home</option>
+                <option value="commercial-apartment">Commercial Apartment</option>
+                <option value="two-apartment-house">Two Apartment House</option>
+                <option value="park-model-mobile-home">Park Model Mobile Home</option>
+                <option value="floathome">Floathome</option>
+            </select>
+
+            <label for="price-range">Price Range</label>
+            <select id="price-range">
+                <option value="1">0 - $499,999</option>
+                <option value="2">$500,000 - $999,999</option>
+                <option value="3">$1,000,000 - $1,499,999</option>
+                <option value="3">$1,500,000 - $1,999,999</option>
+                <option value="3">$2,000,000 - $2,499,999</option>
+                <option value="3">$2,500,000 - $2,999,999</option>
+                <option value="3">$3,000,000 - $3,499,999</option>
+                <option value="3">$3,500,000 - $3,999,999</option>
+                <option value="3">$4,000,000 - $4,499,999</option>
+                <option value="3">$4,500,000 - $4,999,999</option>
+                <option value="3">$5,000,000+</option>
+            </select>
+
+            <label for="open-house">Open Houses Only</label>
+            <input id="open-house" type="checkbox">
+
+            <button type="button" class="filter-submit">Submit</button>
+
+        </div>
+        <div class="content-list">
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous"
+    ></script>
+    <script src="js/home.js" type="module"></script>
+</body>
+</html>
