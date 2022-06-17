@@ -44,13 +44,12 @@ app.get("/api/products/:id", (req, res) => {
 })
 
 app.get("/api/dblength", (req, res) => {
-    res.status(200).json({list: db.length})
+    res.status(200).json({list: db.length + 1})
 })
 
 app.post("/api/products", (req, res) => {
     const {item} = req.body
     db.push(item)
-    console.log(db[db.length - 1])
 })
 
 // html files
