@@ -1,0 +1,23 @@
+*{
+    font-family: Verdana,Helvetica,Arial,sans-serif;
+}
+
+body{
+    color: #eaeaea;
+    background-color: #151514;
+}
+
+.infotable{
+    border: 1px solid black;
+    background-color: rgb(157, 112, 167);
+}
+th, td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 0 1rem;
+    color: #000000;
+}
+
+#delete:hover{
+    cursor: pointer;
+}
